@@ -1,4 +1,10 @@
 const timeContainter = $('#time-containter');
+const clearBtn = $('.clearBtn');
+
+$('.clearBtn').on("click", document, function(event){
+    localStorage.clear();
+    window.location.reload();
+})
 
 //getNote();
 
