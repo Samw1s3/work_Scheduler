@@ -2,7 +2,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
-    margin-bottom: 30px;
   }
   
   textarea {
@@ -12,6 +11,7 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    width: 100%;     
   }
   
   .jumbotron {
@@ -25,10 +25,23 @@ body {
   .description {
     white-space: pre-wrap;
   }
+
+  .col-1 {
+    padding: 0;
+  }
   
+  .col-10 {
+    padding: 0;
+  }
+
+  .timesection {
+    padding: 0;
+    margin: 0;
+  }
   .time-block {
     text-align: center;
     border-radius: 15px;
+    
   }
   
   .row {
@@ -64,6 +77,10 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06aed5;
     color: white;
+    width: 100%;
+    height: 4rem;
+    /* margin-top: 8px; */
+    justify-items: right;
   }
   
   .saveBtn:hover, .clearBtn:hover {
@@ -79,3 +96,4 @@ body {
     font-size: 1rem;
     padding: 10px;
   }
+  
