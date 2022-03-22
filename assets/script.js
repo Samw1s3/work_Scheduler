@@ -23,16 +23,12 @@ function createRow(time) {
     
     console.log(currentHour);
     console.log(time);
- 
-    
-
-
     const timestamp = time + ':00';
 
     const row = $("<div>").attr('class', 'row time-block border').attr('id',`${time}-row`);
 
     //check time vs current hour
-
+   
     if (time === currentHour) {
         $(row).addClass('present')
     }
@@ -42,7 +38,7 @@ function createRow(time) {
     else { 
         $(row).addClass('future')
     }
-  
+
 
     const timeCol = $("<div>").attr('class', 'hour row col-1 timesection').text(timestamp);
 
@@ -116,4 +112,4 @@ $('.saveBtn').on("click", document, function (event) {
 });
 
 // checkbackGround every 5 minutes
-setInterval(setBackgroundColor(), (1000 * 60) * 5);
+setInterval(createRow(), 1000*60*5);

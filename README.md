@@ -5,6 +5,7 @@ This calendar allows the user to plan their day in hourly blocks. The time that 
 
 ## Screenshots
 <img src="assets\images\Screenshot1.jpg" >
+<img src="assets\images\Screenshot 2.jpg" >
 
 ## References
 w3schools https://www.w3schools.com
